@@ -4,8 +4,4 @@ $(document).ready(function () {
 	});
 
     $(document).ajaxStart(function() { Pace.restart(); });
-
-    Mousetrap.bind('f1', function() {
-        window.open('https://asgardcms.com/docs', '_blank');
-    });
 });
