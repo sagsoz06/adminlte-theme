@@ -12,6 +12,10 @@ CKEDITOR.editorConfig = function (config) {
 	config.enterMode = CKEDITOR.ENTER_P;
 	config.extraPlugins = '' +
 		'jsplus_youtube,' +
+		'jsplus_font_awesome,' +
+		'jsplus_templates,' +
+		'jsplus_bootstrap_advanced_blocks,' +
+		'jsplus_backup,' +
 		'jsplus_edit_tag,' +
 		'jsplus_bootstrap_show_blocks,' +
 		'jsplus_bootstrap_templates,' +
@@ -98,4 +102,7 @@ CKEDITOR.editorConfig = function (config) {
 	CKEDITOR.addCss( 'body { padding:25px 30px; }' );
 
 	config.jsplus_youtube_apiKey = 'AIzaSyDHyIEDMgvsKsxOMB65fPlkEPz3nkK26y4';
+
+	config.includeCKEditor = false;
+	config.jsplus_bootstrap_advanced_blocks_enabled_by_default = false;
 };
