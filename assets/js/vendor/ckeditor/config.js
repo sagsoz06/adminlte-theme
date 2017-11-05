@@ -50,7 +50,7 @@ CKEDITOR.editorConfig = function (config) {
 		'jsplus_bootstrap_table_merge_cell_right,' +
 		'jsplus_bootstrap_table_merge_cell_down,' +
 		'jsplus_bootstrap_table_split_cell_hor';
-	config.contentsCss  = ['https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'];
+	config.contentsCss  = ['/themes/adminlte/vendor/bootstrap/dist/css/bootstrap.min.css'];
 	// %REMOVE_END%
 
 	// Define changes to default configuration here.
