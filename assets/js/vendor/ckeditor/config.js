@@ -14,7 +14,6 @@ CKEDITOR.editorConfig = function (config) {
 		'jsplus_youtube,' +
 		'jsplus_font_awesome,' +
 		'jsplus_templates,' +
-		'jsplus_bootstrap_advanced_blocks,' +
 		'jsplus_backup,' +
 		'jsplus_edit_tag,' +
 		'jsplus_bootstrap_show_blocks,' +
