@@ -7,7 +7,7 @@ CKEDITOR.editorConfig = function (config) {
 
 	// %REMOVE_START%
 	// The configuration options below are needed when running CKEditor from source files.
-	config.plugins = 'dialogui,dialog,a11yhelp,basicstyles,blockquote,clipboard,panel,floatpanel,menu,contextmenu,resize,button,toolbar,elementspath,enterkey,entities,popup,filebrowser,floatingspace,listblock,richcombo,format,horizontalrule,htmlwriter,wysiwygarea,indent,indentlist,fakeobjects,link,list,magicline,maximize,pastetext,pastefromword,removeformat,showborders,sourcearea,specialchar,menubutton,scayt,stylescombo,tab,table,tabletools,undo,wsc,panelbutton,colorbutton,colordialog,tableresize,lineutils,widget,find,showblocks,justify,pbckcode,font,lineheight,imageresize,imagerotate,indentblock,templates,format_buttons,autogrow,codemirror,btquicktable,image2';
+	config.plugins = 'dialogui,dialog,a11yhelp,basicstyles,blockquote,clipboard,panel,floatpanel,menu,contextmenu,resize,button,toolbar,elementspath,enterkey,entities,popup,filebrowser,floatingspace,listblock,richcombo,format,horizontalrule,htmlwriter,wysiwygarea,indent,indentlist,fakeobjects,link,list,magicline,maximize,pastetext,pastefromword,removeformat,showborders,sourcearea,specialchar,menubutton,scayt,stylescombo,tab,table,tabletools,undo,wsc,panelbutton,colorbutton,colordialog,tableresize,lineutils,widget,find,showblocks,justify,pbckcode,font,lineheight,imageresize,imagerotate,indentblock,templates,format_buttons,autogrow,codemirror,btquicktable,image2image2,ckgoogledoc';
 	config.skin = 'bootstrapck';
 	config.enterMode = CKEDITOR.ENTER_P;
 	config.extraPlugins = '' +
