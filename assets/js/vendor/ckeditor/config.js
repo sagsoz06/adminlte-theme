@@ -14,7 +14,6 @@ CKEDITOR.editorConfig = function (config) {
 		'jsplus_youtube,' +
 		'jsplus_font_awesome,' +
 		'jsplus_templates,' +
-		'jsplus_backup,' +
 		'jsplus_edit_tag,' +
 		'jsplus_bootstrap_show_blocks,' +
 		'jsplus_bootstrap_templates,' +
@@ -79,7 +78,7 @@ CKEDITOR.editorConfig = function (config) {
 	];
 
 	config.autoGrow_minHeight = 400;
-	config.autoGrow_maxHeight = 800;
+	config.autoGrow_maxHeight = 650;
 
 	// Remove some buttons provided by the standard plugins, which are
 	// not needed in the Standard(s) toolbar.
