@@ -34,10 +34,25 @@
                           validate : CKEDITOR.dialog.validate.notEmpty("Document URL should be provided and has to be a well formated URL")
                         },
                           {
+                              type: 'button',
+                              hidden: true,
+                              id: 'id0',
+                              label: editor.lang.common.browseServer,
+                              filebrowser: {
+                                  action: 'Browse',
+                                  // target: 'tab1:id1',
+                                  onSelect: function( fileUrl, data ) {
+                                      var dialog = this.getDialog();
+                                      dialog.getContentElement( 'tab1', 'url' ).setValue( fileUrl.substr(1) );
+                                      return false;
+                                  }
+                              }
+                          },
+                          {
                             type : 'text',
                             id : 'width',
                             label : 'Document Width in pixels',
-                            onShow : function() { this.setValue('600px'); },
+                            onShow : function() { this.setValue('100%'); },
                             validate : CKEDITOR.dialog.validate.notEmpty("Document width should be provided")
                           },
                           {
@@ -55,7 +70,9 @@
                 var width = dialog.getValueOf('tab1', 'width');
                 var height = dialog.getValueOf('tab1', 'height');
 
-                var inplaceTag = '<iframe src="http://docs.google.com/viewer?url=' + encodeURIComponent(url) + '&embedded=true" style="border: none;width:'+width+';height:'+height+';">';
+                //var inplaceTag = '<iframe src="http://docs.google.com/viewer?url=' + encodeURIComponent(url) + '&embedded=true" style="border: none;width:'+width+';height:'+height+';">';
+
+                var inplaceTag = '<iframe src="//www.jaletezer.k12.tr/ViewerJS/?zoom=page-width#/' + encodeURIComponent(url) + '" style="border: none;" width="'+width+'" height="'+height+'">';
 
                 editor.insertHtml(inplaceTag);
               }
