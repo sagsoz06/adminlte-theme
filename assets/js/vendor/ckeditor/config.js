@@ -100,4 +100,7 @@ CKEDITOR.editorConfig = function (config) {
 	config.jsplus_youtube_apiKey = 'AIzaSyDHyIEDMgvsKsxOMB65fPlkEPz3nkK26y4';
 
 	config.includeCKEditor = false;
+
+    CKEDITOR.allowedContent = true;
+    config.protectedSource.push(/<i[^>]*><\/i>/g);
 };
